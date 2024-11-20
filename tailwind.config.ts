@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import Preline from 'preline/plugin';
 
 export default {
   content: [
@@ -14,5 +15,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  // XXX Commenting out this line prevents early exit when importing @/lib/tailwindConfig
+  plugins: [Preline],
 } satisfies Config;

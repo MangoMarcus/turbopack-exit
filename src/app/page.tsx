@@ -1,4 +1,9 @@
 import Image from "next/image";
+import Preline from 'preline/plugin';
+
+console.log(typeof Preline); // XXX Exits early
+
+// import '@/lib/tailwindConfig'; XXX Use case example
 
 export default function Home() {
   return (
